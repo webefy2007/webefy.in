@@ -59,6 +59,7 @@ a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}
 .about-heading{font-family:"League Spartan",sans-serif;font-size:clamp(40px,5vw,70px);line-height:0.9;letter-spacing:-0.05em;text-transform:uppercase}
 .about-text{margin-top:28px;font-size:18px;color:rgba(30,30,30,0.72);max-width:650px}
 .founders{margin-top:45px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.founders.single-founder{display:block;max-width:400px;margin:45px auto 0}
 .founder{border:1px solid var(--border);padding:25px;border-radius:var(--radius);background:var(--cream)}
 .founder h3{font-family:"League Spartan",sans-serif;font-size:28px;text-transform:uppercase;letter-spacing:-0.03em}
 .founder-role{color:var(--red);font-size:13px;font-weight:800;text-transform:uppercase;margin-top:5px}
@@ -109,11 +110,9 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 .footer-logo{font-family:"League Spartan",sans-serif;font-size:70px;line-height:0.8;font-weight:900;letter-spacing:-0.06em}
 .footer-tagline{margin-top:18px;font-weight:700}.footer-links{display:flex;gap:25px;flex-wrap:wrap}.footer-links a{font-size:14px;font-weight:700}.footer-links a:hover{text-decoration:underline}
 .footer-bottom{border-top:1px solid rgba(249,235,192,.3);margin-top:50px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:12px;opacity:0.75}
-/* FIXED REVEAL - Spck safe */
 .reveal{opacity:0;transform:translateY(35px);transition:opacity 0.7s ease,transform 0.7s ease}
 .reveal.show{opacity:1;transform:translateY(0)}
 .hero .reveal{opacity:1!important;transform:none!important}
-
 @media(max-width:900px){
 .nav-links{position:absolute;top:65px;left:0;width:100%;background:var(--cream);border:1px solid var(--border);border-radius:22px;padding:18px;display:none;flex-direction:column;align-items:stretch;gap:4px}
 .nav-links.active{display:flex}.nav-links a{padding:12px;border-radius:10px}.nav-links a:hover{background:var(--yellow)}.nav-cta{text-align:center;margin-top:5px}.menu-button{display:block}
@@ -137,7 +136,7 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 <a href="#home" class="logo">webefy.in</a>
 <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
 <div class="nav-links" id="navLinks">
-<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#process">Process</a><a href="#contact">Contact</a>
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#templates">Templates</a><a href="#process">Process</a><a href="#contact">Contact</a>
 <a href="#contact" class="nav-cta">Get Started →</a>
 </div>
 </nav>
@@ -151,7 +150,7 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 <p class="hero-copy">We build clean, modern and functional websites for businesses, startups and growing brands.</p>
 <div class="hero-buttons">
 <a href="#contact" class="btn btn-dark">Start a Project →</a>
-<a href="https://wa.me/919111349311" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
+<a href="https://wa.me/918109324626" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
 </div>
 </div>
 <div class="hero-card reveal show"><div class="hero-star">✦</div><div class="hero-card-inner"><div class="hero-card-text">Build.<br />Launch.<br />Grow.</div></div></div>
@@ -170,8 +169,7 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 <div class="eyebrow">About Webefy</div>
 <h2 class="about-heading">We're students, developers & <span class="red">builders.</span></h2>
 <p class="about-text">While studying Computer Science, we're building Webefy alongside our academic journey — helping businesses turn their ideas into modern digital experiences.</p>
-<div class="founders">
-<div class="founder"><h3>Vishesh Panthi</h3><div class="founder-role">Founder · UI Designer & Marketing Manager</div><p>Focused on design, marketing, web development, animation and video editing.</p></div>
+<div class="founders single-founder">
 <div class="founder"><h3>Jatin Ahirwar</h3><div class="founder-role">Founder · Web Developer</div><a href="https://webidex.in" target="_blank" rel="noopener noreferrer" class="webidex-founder-link">Founder of Webidex.in ↗</a><p>Focused on coding, web development and the technical side of building websites.</p></div>
 </div>
 </div>
@@ -189,8 +187,91 @@ footer{background:var(--red);color:var(--cream);padding:60px 0 25px;width:100%}
 </div>
 </div>
 </section>
-<section class="section portfolio" id="portfolio">
+<section class="section portfolio" id="templates">
 <div class="container">
-<div class="reveal"><div class="eyebrow">Selected Work</div><h2 class="section-title">Things we've<br /><span class="red">built.</span></h2></div>
-<div class="portfolio-grid">
-<article class="project pro
+<div class="reveal"><div class="eyebrow">Webefy Templates</div><h2 class="section-title">Check out our<br /><span class="red">works.</span></h2></div>
+<p class="section-description" style="color:rgba(249,235,192,0.75);margin-top:20px">A selection of ready-made designs for local businesses — clothing, hotels, sweet shops & salons. Fast, WhatsApp-ready, easy to edit.</p>
+
+<div class="portfolio-grid" style="grid-template-columns:repeat(2,1fr);margin-top:40px">
+<article class="project reveal" style="background-image:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80)">
+<div class="project-overlay"><div class="project-tag">Clothing Store</div><h3>Fab Look</h3><p>Boutique & menswear store. Collections, size chart, WhatsApp order.</p><div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><a href="templates/clothing-store.html" target="_blank" class="project-link">Live Preview ↗</a><a href="#contact" class="project-link" style="background:var(--yellow)">Use This →</a></div></div>
+</article>
+
+<article class="project reveal" style="background-image:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1551882547-b79c11407f5d?auto=format&fit=crop&w=1200&q=80)">
+<div class="project-overlay"><div class="project-tag">Hotel / Stay</div><h3>Hotel Royal Stay</h3><p>Hotel, lodge, homestay. Rooms, gallery, amenities, booking.</p><div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><a href="templates/hotel-royal.html" target="_blank" class="project-link">Live Preview ↗</a><a href="#contact" class="project-link" style="background:var(--yellow)">Use This →</a></div></div>
+</article>
+
+<article class="project reveal" style="background-image:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=1200&q=80)">
+<div class="project-overlay"><div class="project-tag">Sweet Shop</div><h3>Mithai Junction</h3><p>Mithai, bakery, namkeen. Today's specials, bulk orders, festival.</p><div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><a href="templates/mithai-shop.html" target="_blank" class="project-link">Live Preview ↗</a><a href="#contact" class="project-link" style="background:var(--yellow)">Use This →</a></div></div>
+</article>
+
+<article class="project reveal" style="background-image:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.78)),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80)">
+<div class="project-overlay"><div class="project-tag">Salon Studio</div><h3>Cut & Style</h3><p>Men's salon / unisex. Services, pricing, artists, appointments.</p><div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><a href="templates/salon-studio.html" target="_blank" class="project-link">Live Preview ↗</a><a href="#contact" class="project-link" style="background:var(--yellow)">Use This →</a></div></div>
+</article>
+</div>
+
+<div style="text-align:center;margin-top:45px"><a href="templates.html" class="btn" style="background:var(--cream);color:var(--dark);border-color:var(--cream)">View All Templates →</a></div>
+</div>
+</section>
+
+<section class="section process" id="process">
+<div class="container">
+<div class="reveal"><div class="eyebrow">Our Process</div><h2 class="section-title">From idea<br />to <span class="red">online.</span></h2></div>
+<div class="process-list">
+<div class="process-item reveal"><div class="process-number">01</div><h3>Understand</h3><p>We understand your business, audience, goals and what you need from your website.</p></div>
+<div class="process-item reveal"><div class="process-number">02</div><h3>Design</h3><p>We create a clean visual direction focused on your brand and your customers.</p></div>
+<div class="process-item reveal"><div class="process-number">03</div><h3>Build</h3><p>We develop the website and make sure it works smoothly across devices.</p></div>
+<div class="process-item reveal"><div class="process-number">04</div><h3>Launch</h3><p>After testing and final improvements, your website goes live.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="container">
+<div class="contact-grid">
+<div class="reveal"><div class="eyebrow">Let's Talk</div><h2 class="contact-title">Let's build something <span class="red">great.</span></h2><div class="contact-info"><a href="tel:+918109324626">📞 +91 81093 24626</a><a href="mailto:webefy.in@gmail.com">✉ webefy.in@gmail.com</a><a href="https://instagram.com/webefy.in" target="_blank" rel="noopener">◎ @webefy.in</a></div></div>
+<div class="contact-form reveal"><form id="contactForm">
+<div class="form-row"><div class="field"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Enter your name" required /></div><div class="field"><label for="business">Business Name</label><input type="text" id="business" name="business" placeholder="Your business" required /></div></div>
+<div class="form-row"><div class="field"><label for="phone">WhatsApp / Phone</label><input type="tel" id="phone" name="phone" placeholder="Your number" required /></div><div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" required /></div></div>
+<div class="field"><label for="service">What do you need?</label><select id="service" name="service" required><option value="">Select a service</option><option value="Business Website">Business Website</option><option value="WordPress Website">WordPress Website</option><option value="Landing Page">Landing Page</option><option value="E-Commerce Website">E-Commerce Website</option><option value="Template Setup - Clothing Store">Template: Clothing Store</option><option value="Template Setup - Hotel">Template: Hotel</option><option value="Template Setup - Sweet Shop">Template: Sweet Shop</option><option value="Template Setup - Salon">Template: Salon</option><option value="Not Sure">Not Sure Yet</option></select></div>
+<div class="field"><label for="message">Tell us about your project</label><textarea id="message" name="message" placeholder="Tell us what you want to build..." required></textarea></div>
+<button type="submit" class="submit-btn">Send Enquiry →</button>
+<p class="form-note">Clicking send will open your email app with the enquiry details ready to send.</p>
+</form></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-top"><div><div class="footer-logo">webefy.</div><div class="footer-tagline">Your Business. Online.</div></div><div class="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#templates">Templates</a><a href="#contact">Contact</a><a href="https://instagram.com/webefy.in" target="_blank" rel="noopener">Instagram</a><a href="templates.html">All Templates</a></div></div>
+<div class="footer-bottom"><span id="footerYear">© 2026 Webefy. All rights reserved.</span><span>Bhopal, Madhya Pradesh, India 🇮🇳</span></div>
+</div>
+</footer>
+
+<script>
+const menuButton=document.getElementById("menuButton");const navLinks=document.getElementById("navLinks");
+menuButton.addEventListener("click",()=>{navLinks.classList.toggle("active");menuButton.textContent=navLinks.classList.contains("active")?"✕":"☰"});
+document.querySelectorAll(".nav-links a").forEach(link=>{link.addEventListener("click",()=>{navLinks.classList.remove("active");menuButton.textContent="☰"})});
+const revealElements=document.querySelectorAll(".reveal");
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("show");observer.unobserve(entry.target)}})},{threshold:0.12});
+revealElements.forEach(el=>observer.observe(el));
+setTimeout(()=>{document.querySelectorAll(".reveal").forEach(el=>el.classList.add("show"))},700);
+const contactForm=document.getElementById("contactForm");
+contactForm.addEventListener("submit",function(e){
+e.preventDefault();
+const name=document.getElementById("name").value.trim();
+const business=document.getElementById("business").value.trim();
+const phone=document.getElementById("phone").value.trim();
+const email=document.getElementById("email").value.trim();
+const service=document.getElementById("service").value;
+const message=document.getElementById("message").value.trim();
+const subject=encodeURIComponent("New Webefy Enquiry — "+business);
+const body=encodeURIComponent(`Hello Webefy,\n\nI want to discuss a website project.\n\nName: ${name}\nBusiness: ${business}\nPhone / WhatsApp: ${phone}\nEmail: ${email}\nService: ${service}\n\nProject Details:\n${message}\n\nSent through webefy.in`);
+window.location.href=`mailto:webefy.in@gmail.com?subject=${subject}&body=${body}`;
+});
+document.getElementById("footerYear").textContent=`© ${new Date().getFullYear()} Webefy. All rights reserved.`;
+</script>
+</body>
+</html>
